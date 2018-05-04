@@ -10,6 +10,7 @@ import static com.company.database.DataBaseLogin.stmt;
 public class LoginCatalog {
 
     public static void login() throws SQLException {
+        /*TASK 1: Sistem de autentificare cu nume de utilizator si parola */
         Scanner keyboard = new Scanner(System.in);
         System.out.println("enter username");
         String username = keyboard.next();
@@ -40,15 +41,35 @@ public class LoginCatalog {
         }
     }
 
-    private static void loginElev() {
-        System.out.println("este elev");
+    private static void loginDirector() {
+        /* TASK 2: gestiunea elevilor – directorul scolii poate face operatii de tip
+           CRUD(create, read, update, delete) pe datele acestora: nume, prenume, numar
+           matricol, clasa;*/
+        //aici o sa se poata accesa metodele din clasa Elev
+
+        System.out.println("este director");
     }
 
     private static void loginProfesor() {
+        /* TASK 3: gestiunea notelor si absentelor – profesorii pot face operatii de tip CRUD
+           pe notele si absentele unui elev. O nota are identificatorul elevului,
+           denumirea materiei, nota si data. O absenta are numele studentului,
+           materia si data; */
+        //aici o sa se poata acecsa metodele din clasa note si absente
+
         System.out.println("este profesor");
     }
 
-    private static void loginDirector() {
-        System.out.println("este director");
+    private static void loginElev() {
+        /* TASK 4: Rapoarte catalog – sa se implementeze raport pentru afisarea mediei
+           notelor pe clasa si un raport pentru afisarea situatiei unui elev (afisarea
+           notelor, numarul total de absente, media generala); */
+        //aici o sa se poata accesa metodele din clasa rapoarte
+
+        System.out.println("este elev");
+        }
+
+
+
+
     }
-}
