@@ -10,6 +10,7 @@ import static com.company.database.DataBaseLogin.USER;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
 import static com.company.personnel.Elev.getElevNameByID;
+import static com.company.personnel.Materie.getMaterieProfesorNameByID;
 
 public class RapoarteCatalog {
 
@@ -45,7 +46,7 @@ public class RapoarteCatalog {
                 int idElev = rs.getInt("ID_ELEV");
                 int idMaterieProf  = rs.getInt("ID_MP");
 
-                System.out.println("nota: " + nota);
+                System.out.println( getMaterieProfesorNameByID(idMaterieProf) + nota);
 
                 //daca elevul curent este cel cautat trebuie sa ii afisam situatia
                 if(idElev == idElevCautat) {
