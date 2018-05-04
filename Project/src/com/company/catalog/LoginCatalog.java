@@ -10,6 +10,7 @@ import static com.company.database.DataBaseLogin.stmt;
 public class LoginCatalog {
 
     public static void login() throws SQLException {
+
         /*TASK 1: Sistem de autentificare cu nume de utilizator si parola */
         Scanner keyboard = new Scanner(System.in);
         System.out.println("enter username");
@@ -50,7 +51,7 @@ public class LoginCatalog {
             else System.out.println("-parola incorecta-");
         }
     }
-    
+
     private static void loginDirector() {
         /* TASK 2: gestiunea elevilor – directorul scolii poate face operatii de tip
            CRUD(create, read, update, delete) pe datele acestora: nume, prenume, numar
@@ -79,7 +80,7 @@ public class LoginCatalog {
         //PROBLEME MODIFICA DAR NU SE MODIFICA IN BAZA DE DATE motivareAbsenta(18,1,"01-05-2018");
     }
 
-    private static void loginElev() {
+    private static void loginElev() throws SQLException {
         /* TASK 4: Rapoarte catalog – sa se implementeze raport pentru afisarea mediei
            notelor pe clasa si un raport pentru afisarea situatiei unui elev (afisarea
            notelor, numarul total de absente, media generala); */
