@@ -45,7 +45,9 @@ public class RapoarteCatalog {
                 int idElev = rs.getInt("ID_ELEV");
                 int idMaterieProf  = rs.getInt("ID_MP");
 
-                //daca elevul curent este cel caruita trebuie sa ii afisam situatia
+                System.out.println("nota: " + nota);
+
+                //daca elevul curent este cel cautat trebuie sa ii afisam situatia
                 if(idElev == idElevCautat) {
                     numarNote ++;
                     sumaNote += nota;
