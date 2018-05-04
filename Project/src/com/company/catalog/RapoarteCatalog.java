@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 import static com.company.elev.Absente.getNrAbsenteElevByID;
 import static com.company.elev.Note.getNoteMedieElevByID;
-import static com.company.personnel.Elev.getElevNameByID;
+import static com.company.positions.Elev.getElevNameByID;
 
 public class RapoarteCatalog {
 

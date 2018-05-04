@@ -1,4 +1,4 @@
-package com.company.personnel;
+package com.company.positions;
 
 import java.sql.*;
 

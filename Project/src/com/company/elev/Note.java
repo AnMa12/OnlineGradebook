@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
-import static com.company.personnel.Materie.getMaterieProfesorNameByID;
+import static com.company.positions.Materie.getMaterieProfesorNameByID;
 
 public class Note {
 

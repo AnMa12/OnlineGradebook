@@ -5,7 +5,6 @@ import java.sql.SQLException;
 
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
-import static com.company.personnel.Materie.getMaterieProfesorNameByID;
 
 public class Absente {
     public static int getNrAbsenteElevByID (int ID_ELEV) throws SQLException {

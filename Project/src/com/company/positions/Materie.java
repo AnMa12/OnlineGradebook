@@ -1,11 +1,11 @@
-package com.company.personnel;
+package com.company.positions;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
-import static com.company.personnel.Profesor.getProfesorNameByID;
+import static com.company.positions.Profesor.getProfesorNameByID;
 
 public class Materie {
     public static String getMaterieNameByID(int ID_MATERIE) throws SQLException {
