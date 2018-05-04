@@ -2,8 +2,9 @@ package com.company.catalog;
 
 import java.sql.SQLException;
 
-import static com.company.catalog.RapoarteCatalog.situatieElev;
+import static com.company.catalog.LoginCatalog.login;
 import static com.company.database.DataBaseLogin.createConnection;
+
 
 public class FunctionalitatiCatalog {
 
@@ -19,7 +20,9 @@ public class FunctionalitatiCatalog {
         //adaugareAbsenta(19, 2, "01-05-2018", "nemotivat");
         //PROBLEME MODIFICA DAR NU SE MODIFICA IN BAZA DE DATE motivareAbsenta(18,1,"01-05-2018");
 
-        situatieElev(22);
+        //situatieElev(22);
+
+        login();
 
     }
 }
