@@ -2,7 +2,7 @@ package com.company.database;
 
 import java.sql.*;
 
-public class DataBase {
+public class DataBaseLogin {
     // JDBC driver name and database URL
     public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     public static final String DB_URL = "jdbc:mysql://myownpi.ddns.net:3306/catalog";

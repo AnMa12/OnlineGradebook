@@ -2,9 +2,9 @@ package com.company.personnel;
 
 import java.sql.*;
 
-import static com.company.database.DataBase.DB_URL;
-import static com.company.database.DataBase.PASS;
-import static com.company.database.DataBase.USER;
+import static com.company.database.DataBaseLogin.DB_URL;
+import static com.company.database.DataBaseLogin.PASS;
+import static com.company.database.DataBaseLogin.USER;
 
 public class Elev {
 
@@ -102,7 +102,7 @@ public class Elev {
         System.out.println("Goodbye!");
     }
 
-    public static void updateElev(String numeNou, int ID_ELEV) throws SQLException {
+    public static void updateElev(int ID_ELEV, String numeNou) throws SQLException {
         try{
             //STEP 2: Register JDBC driver
             Class.forName("com.mysql.jdbc.Driver");
