@@ -14,8 +14,6 @@ public class LoginCatalog {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("enter username");
         String username = keyboard.next();
-        System.out.println("enter password");
-        String password = keyboard.next();
 
         //vedem daca parola este corecta
         //vedem daca username-ul este de tip elev/profesor/director
@@ -31,25 +29,28 @@ public class LoginCatalog {
         rs.close();
 
         //TREBUIE FACUT CEVA CA SA SE POATA INTRODUCE PAROLA PANA E CORECTA
-        if(parola.equals(password)) {
-            switch (tip) {
-                case "elev":
-                    loginElev();
-                    break;
-                case "profesor":
-                    loginProfesor();
-                    break;
-                case "director":
-                    loginDirector();
-                    break;
-                default:
-                    System.out.println("-username inexistent-");
-                    break;
+        if(tip.equals(""))
+            System.out.println("-username inexistent-");
+        else {
+            System.out.println("enter password");
+            String password = keyboard.next();
+            if(parola.equals(password)) {
+                switch (tip) {
+                    case "elev":
+                        loginElev();
+                        break;
+                    case "profesor":
+                        loginProfesor();
+                        break;
+                    case "director":
+                        loginDirector();
+                        break;
+                }
             }
+            else System.out.println("-parola incorecta-");
         }
-        else System.out.println("-parola incorecta-");
     }
-
+    
     private static void loginDirector() {
         /* TASK 2: gestiunea elevilor – directorul scolii poate face operatii de tip
            CRUD(create, read, update, delete) pe datele acestora: nume, prenume, numar
