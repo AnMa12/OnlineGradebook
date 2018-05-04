@@ -36,11 +36,10 @@ public class Materie {
         ResultSet rs = stmt.executeQuery(sql);
         while(rs.next()) {
             searchedMaterieProfesor = searchedMaterieProfesor +
-                    "Materia " +
                     getMaterieNameByID(Integer.parseInt(rs.getString("ID_MATERIE"))) +
-                    " ( " +
+                    " (cu " +
                     getProfesorNameByID(Integer.parseInt(rs.getString("ID_PROFESOR"))) +
-                    " )";
+                    "): ";
         }
         rs.close();
 

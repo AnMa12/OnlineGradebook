@@ -12,7 +12,7 @@ public class Profesor {
         String searchedProfesor = "";
 
         //STEP 4: Execute a query
-        System.out.println("Searching profesor from the table...");
+        //System.out.println("Searching profesor from the table...");
         stmt = conn.createStatement();
         String sql = "SELECT nume, prenume FROM profesor WHERE ID_PROFESOR =" + ID_PROFESOR;
         ResultSet rs = stmt.executeQuery(sql);
@@ -21,7 +21,7 @@ public class Profesor {
                     + " " + rs.getString("prenume");
         }
         rs.close();
-        System.out.println("Found profesor from the table...");
+        //System.out.println("Found profesor from the table...");
 
         if(!searchedProfesor.equals(""))
             return searchedProfesor;

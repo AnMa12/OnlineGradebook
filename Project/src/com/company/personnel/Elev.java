@@ -10,7 +10,7 @@ public class Elev {
     public static String getElevNameByID(int ID_ELEV) throws SQLException {
         String searchedName = "";
             //STEP 4: Execute a query
-            System.out.println("Searching name from the table elev");
+            //System.out.println("Searching name from the table elev");
             stmt = conn.createStatement();
             String sql = "SELECT nume, prenume FROM elev WHERE ID_ELEV =" + ID_ELEV;
             ResultSet rs = stmt.executeQuery(sql);
@@ -19,7 +19,7 @@ public class Elev {
                         rs.getString("prenume");
             }
             rs.close();
-            System.out.println("Found name from the table elev");
+            //System.out.println("Found name from the table elev");
 
             if(!searchedName.equals(""))
             return searchedName;

@@ -4,6 +4,8 @@ import java.sql.SQLException;
 
 import static com.company.catalog.RapoarteCatalog.situatieElev;
 import static com.company.database.DataBaseLogin.createConnection;
+import static com.company.elev.Absente.adaugareAbsenta;
+import static com.company.elev.Absente.motivareAbsenta;
 import static com.company.personnel.Elev.*;
 import static com.company.elev.Note.*;
 
@@ -18,7 +20,10 @@ public class FunctionalitatiCatalog {
         //deleteElev(22);
 
         //adaugareNota(21, 2, 9, "15-04-2018");
+        //adaugareAbsenta(19, 2, "01-05-2018", "nemotivat");
+        //NU MERGE motivareAbsenta(19,2,"01-05-2018");
 
-        situatieElev(22);
+        //situatieElev(22);
+
     }
 }
