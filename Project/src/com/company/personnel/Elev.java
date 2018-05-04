@@ -5,11 +5,14 @@ import java.sql.*;
 import static com.company.database.DataBaseLogin.DB_URL;
 import static com.company.database.DataBaseLogin.PASS;
 import static com.company.database.DataBaseLogin.USER;
+import static com.company.database.DataBaseLogin.conn;
+import static com.company.database.DataBaseLogin.stmt;
 
 public class Elev {
 
-    private static Connection conn = null;
-    private static Statement stmt = null;
+    public static String getElevNameByID(int ID_ELEV) {
+        return "GIGEL";
+    }
 
     public static void createElev(int ID_ELEV, String nume,
                                String prenume, String nume_clasa) throws SQLException {

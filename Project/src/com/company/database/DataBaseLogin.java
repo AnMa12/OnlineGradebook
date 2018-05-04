@@ -10,4 +10,7 @@ public class DataBaseLogin {
     //  Database credentials
     public static final String USER = "admin";
     public static final String PASS = "admin";
+
+    public static Connection conn = null;
+    public static Statement stmt = null;
 }

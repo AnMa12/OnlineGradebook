@@ -2,6 +2,7 @@ package com.company.catalog;
 
 import java.sql.SQLException;
 
+import static com.company.catalog.RapoarteCatalog.situatieElev;
 import static com.company.personnel.Elev.*;
 import static com.company.elev.Note.*;
 
@@ -12,7 +13,7 @@ public class FunctionalitatiCatalog {
         //readElev();
         //updateElev(22, "Hincu");
         //deleteElev(22);
-        adaugareNota(21, 2, 9, "15-04-2018");
-
+        //adaugareNota(21, 2, 9, "15-04-2018");
+        situatieElev(22);
     }
 }

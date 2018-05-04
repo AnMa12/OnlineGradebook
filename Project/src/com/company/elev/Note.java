@@ -8,11 +8,10 @@ import java.sql.Statement;
 import static com.company.database.DataBaseLogin.DB_URL;
 import static com.company.database.DataBaseLogin.PASS;
 import static com.company.database.DataBaseLogin.USER;
+import static com.company.database.DataBaseLogin.conn;
+import static com.company.database.DataBaseLogin.stmt;
 
 public class Note {
-
-    private static Connection conn = null;
-    private static Statement stmt = null;
 
     public static void adaugareNota(int ID_ELEV, int ID_MP, int nota, String data_notei) throws SQLException {
         try{
