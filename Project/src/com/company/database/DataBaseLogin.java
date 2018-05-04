@@ -13,4 +13,14 @@ public class DataBaseLogin {
 
     public static Connection conn = null;
     public static Statement stmt = null;
+
+    public static void createConnection() throws ClassNotFoundException, SQLException {
+        //STEP 2: Register JDBC driver
+        Class.forName("com.mysql.jdbc.Driver");
+
+        //STEP 3: Open a connection
+        System.out.println("Connecting to a selected database...");
+        conn = DriverManager.getConnection(DB_URL, USER, PASS);
+        System.out.println("Connected database successfully...");
+    }
 }
