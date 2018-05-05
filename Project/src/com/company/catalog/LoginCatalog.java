@@ -1,5 +1,8 @@
 package com.company.catalog;
 
+import com.company.loginInterface.loginUI;
+
+import java.awt.*;
 import java.sql.SQLException;
 
 import static com.company.loginInterface.loginUI.callLoginUI;
@@ -7,8 +10,8 @@ import static com.company.loginInterface.loginUI.callLoginUI;
 public class LoginCatalog {
 
     public static void login() throws SQLException {
-        callLoginUI();
         /*TASK 1: Sistem de autentificare cu nume de utilizator si parola */
+        callLoginUI();
     }
 
     private static void loginDirector() {

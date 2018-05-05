@@ -37,7 +37,9 @@ public class loginUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    loginAction();
+                    String username = usernameField.getText();
+                    String password = passwordField.getText();
+                    testUsernamePassword(username, password);
                 } catch (SQLException e1) {
                     e1.printStackTrace();
                 }
@@ -48,14 +50,10 @@ public class loginUI extends JFrame {
         setTitle("Login");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
     }
 
-    private void loginAction() throws SQLException {
-        String username = usernameField.getText();
-        String password = passwordField.getText();
-
-        //vedem daca parola este corecta si vedem daca username-ul este de tip Elev/profesor/director
+    private void testUsernamePassword(String username, String password) throws SQLException {
+        //luam datele dupa username-ul introdus
         stmt = conn.createStatement();
         String sql = "SELECT parola, tip FROM login WHERE username = '" + username + "'";
         ResultSet rs = stmt.executeQuery(sql);
@@ -66,36 +64,36 @@ public class loginUI extends JFrame {
         }
         rs.close();
 
+        //testam daca parola este coreta si daca username-ul este de tip Elev/profesor/director
         int loginSuccess = 0;
-            if (!username.isEmpty() && !password.isEmpty()) {
-                if(tip.equals(""))
-                    System.out.println("-username inexistent-");
-                else {
-                    if(parola.equals(password)) {
-                        loginSuccess = 1;
-                        switch (tip) {
-                            case "elev":
-                                System.out.println("este elev");
-                                break;
-                            case "profesor":
-                                System.out.println("este profesor");
-                                break;
-                            case "director":
-                                System.out.println("este director");
-                                break;
-                        }
+        if (!username.isEmpty() && !password.isEmpty()) {
+            if(tip.equals(""))
+                System.out.println("-username inexistent-");
+            else {
+                if(parola.equals(password)) {
+                    loginSuccess = 1;
+                    switch (tip) {
+                        case "elev":
+                            System.out.println("este elev");
+                            break;
+                        case "profesor":
+                            System.out.println("este profesor");
+                            break;
+                        case "director":
+                            System.out.println("este director");
+                            break;
                     }
-                    else System.out.println("-parola incorecta-" + password + parola);
                 }
+                else System.out.println("-parola incorecta-" + password + parola);
             }
-        loginPage.dispose();
+        }
 
+        loginPage.dispose();
         if(loginSuccess == 0) {
             //pagina de login apare pana se adauga un user si o parola corecta
             new invalidLoginUI();
         }
     }
-
 
     private void createLayout(Component... arg) {
 
