@@ -1,5 +1,9 @@
 package com.company.loginInterface;
 
+import com.company.userInterface.directorUI;
+import com.company.userInterface.elevUI;
+import com.company.userInterface.profesorUI;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -40,6 +44,7 @@ public class loginUI extends JFrame {
                     String username = usernameField.getText();
                     String password = passwordField.getText();
                     testUsernamePassword(username, password);
+                    //and open the correct user page
                 } catch (SQLException e1) {
                     e1.printStackTrace();
                 }
@@ -66,32 +71,35 @@ public class loginUI extends JFrame {
 
         //testam daca parola este coreta si daca username-ul este de tip Elev/profesor/director
         int loginSuccess = 0;
+        int tipEroare = 0;
         if (!username.isEmpty() && !password.isEmpty()) {
-            if(tip.equals(""))
-                System.out.println("-username inexistent-");
-            else {
-                if(parola.equals(password)) {
+            if(tip.equals("")) {
+                tipEroare = 1; //System.out.println("-username inexistent-");
+            }
+            else if(parola.equals(password)) {
                     loginSuccess = 1;
                     switch (tip) {
                         case "elev":
-                            System.out.println("este elev");
+                            new elevUI();
                             break;
                         case "profesor":
-                            System.out.println("este profesor");
+                            new profesorUI();
                             break;
                         case "director":
-                            System.out.println("este director");
+                            new directorUI();
                             break;
                     }
-                }
-                else System.out.println("-parola incorecta-" + password + parola);
             }
+            else {
+                tipEroare = 2; //System.out.println("-parola incorecta-" + password + parola);}
+            }
+
         }
 
         loginPage.dispose();
         if(loginSuccess == 0) {
             //pagina de login apare pana se adauga un user si o parola corecta
-            new invalidLoginUI();
+            new invalidLoginUI(tipEroare);
         }
     }
 

@@ -9,9 +9,14 @@ import static com.company.loginInterface.loginUI.callLoginUI;
 
 public class invalidLoginUI extends JFrame {
 
-    public invalidLoginUI() {
+    public invalidLoginUI(int tipEroare) {
 
-        JButton tryAgainButton = new JButton("Incearca iar");
+        JButton tryAgainButton = null;
+        if(tipEroare == 2) {
+            tryAgainButton = new JButton("Parola invalida - Incearca iar");
+        } else {
+            tryAgainButton = new JButton("Username invalid - Incearca iar");
+        }
 
         createLayout(tryAgainButton);
 
