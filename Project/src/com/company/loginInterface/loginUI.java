@@ -79,15 +79,21 @@ public class loginUI extends JFrame {
             else if(parola.equals(password)) {
                     loginSuccess = 1;
                     switch (tip) {
-                        case "elev":
-                            new elevUI();
+                        case "elev": {
+                            elevUI elevUI = new elevUI();
+                            elevUI.setVisible(true);
                             break;
-                        case "profesor":
-                            new profesorUI();
+                        }
+                        case "profesor": {
+                            profesorUI profesorUI = new profesorUI();
+                            profesorUI.setVisible(true);
                             break;
-                        case "director":
-                            new directorUI();
+                        }
+                        case "director": {
+                            directorUI directorUI = new directorUI();
+                            directorUI.setVisible(true);
                             break;
+                        }
                     }
             }
             else {
