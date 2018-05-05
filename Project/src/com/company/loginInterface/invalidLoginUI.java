@@ -1,31 +1,29 @@
-package com.company.userInterface;
+package com.company.loginInterface;
 
 import javax.swing.*;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.SQLException;
 
-import static com.company.userInterface.loginUI.callLoginUI;
+import static com.company.loginInterface.loginUI.callLoginUI;
 
 public class invalidLoginUI extends JFrame {
 
     public invalidLoginUI() {
-        String messege = "Username sau parola invalida";
 
-        JLabel label = new JLabel(messege);
         JButton tryAgainButton = new JButton("Incearca iar");
 
-        createLayout(label, tryAgainButton);
+        createLayout(tryAgainButton);
 
         setVisible(true);
-        setTitle("Invalid Login");
+        setTitle("JButtons");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         tryAgainButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                dispose();
                 callLoginUI();
             }
         });
@@ -38,6 +36,7 @@ public class invalidLoginUI extends JFrame {
         pane.setLayout(gl);
 
         gl.setAutoCreateContainerGaps(true);
+        gl.setAutoCreateGaps(true);
 
         gl.setHorizontalGroup(gl.createSequentialGroup()
                 .addComponent(arg[0])
@@ -46,6 +45,8 @@ public class invalidLoginUI extends JFrame {
         gl.setVerticalGroup(gl.createParallelGroup()
                 .addComponent(arg[0])
         );
+
+        gl.linkSize(arg[0]);
 
         pack();
     }

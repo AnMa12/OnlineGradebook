@@ -1,12 +1,8 @@
 package com.company.catalog;
 
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Scanner;
 
-import static com.company.database.DataBaseLogin.conn;
-import static com.company.database.DataBaseLogin.stmt;
-import static com.company.userInterface.loginUI.callLoginUI;
+import static com.company.loginInterface.loginUI.callLoginUI;
 
 public class LoginCatalog {
 

@@ -1,4 +1,4 @@
-package com.company.userInterface;
+package com.company.loginInterface;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,8 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
-import java.util.Scanner;
 
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
