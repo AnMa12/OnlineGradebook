@@ -28,8 +28,8 @@
       <file leaf-file-name="LoginCatalog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/catalog/LoginCatalog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="391">
+              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,11 +40,10 @@
       <file leaf-file-name="Elev.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/positions/Elev.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#getElevNameByID#0;class#Elev#0" />
                 <element signature="method#createElev#0;class#Elev#0" />
                 <element signature="method#readElev#0;class#Elev#0" />
                 <element signature="method#updateElev#0;class#Elev#0" />
@@ -54,11 +53,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RapoarteCatalog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="loginUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+            <state relative-caret-position="925">
+              <caret line="55" column="8" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createLayout#0;class#loginUI#0" />
@@ -83,19 +94,15 @@
       <file leaf-file-name="elevUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/elevUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="220">
+              <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1526#1527#0" expanded="true" />
                 <element signature="e#1558#1559#0" expanded="true" />
-                <element signature="e#1779#1809#0" expanded="true" />
-                <element signature="e#1814#1903#0" expanded="true" />
-                <element signature="e#2596#2597#0" expanded="true" />
-                <element signature="e#2656#2657#0" expanded="true" />
-                <element signature="e#7797#7884#0" expanded="true" />
-                <element signature="e#9254#9255#0" expanded="true" />
-                <element signature="e#9313#9314#0" expanded="true" />
+                <element signature="e#549#579#0" expanded="true" />
+                <element signature="e#1880#1881#0" expanded="true" />
+                <element signature="e#1940#1941#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,10 +124,13 @@
       <file leaf-file-name="invalidLoginUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="225">
+              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#806#836#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,24 +139,10 @@
       <file leaf-file-name="FunctionalitatiCatalog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="170">
               <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Materie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/positions/Materie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getMaterieNameByID#0;class#Materie#0" />
-                <element signature="method#getMaterieProfesorNameByID#0;class#Materie#0" />
               </folding>
             </state>
           </provider>
@@ -187,13 +183,14 @@
         <option value="$PROJECT_DIR$/src/com/company/catalog/LoginCatalog.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/directorUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/profesorUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/positions/Elev.java" />
         <option value="$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/elevUI.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -363,10 +360,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32965517" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -377,7 +374,7 @@
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.15429688" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15429688" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
@@ -390,7 +387,6 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32965517" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32965517" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -429,7 +425,6 @@
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getElevNameByID#0;class#Elev#0" />
             <element signature="method#createElev#0;class#Elev#0" />
             <element signature="method#readElev#0;class#Elev#0" />
             <element signature="method#updateElev#0;class#Elev#0" />
@@ -457,13 +452,9 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1526#1527#0" expanded="true" />
             <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1779#1809#0" expanded="true" />
-            <element signature="e#1814#1903#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2656#2657#0" expanded="true" />
-            <element signature="e#7797#7884#0" expanded="true" />
-            <element signature="e#9254#9255#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#549#579#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -485,6 +476,9 @@
           <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#806#836#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -539,7 +533,6 @@
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#getElevNameByID#0;class#Elev#0" />
             <element signature="method#createElev#0;class#Elev#0" />
             <element signature="method#readElev#0;class#Elev#0" />
             <element signature="method#updateElev#0;class#Elev#0" />
@@ -671,35 +664,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/positions/Director.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/positions/Elev.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getElevNameByID#0;class#Elev#0" />
-            <element signature="method#createElev#0;class#Elev#0" />
-            <element signature="method#readElev#0;class#Elev#0" />
-            <element signature="method#updateElev#0;class#Elev#0" />
-            <element signature="method#deleteElev#0;class#Elev#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,26 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/catalog/LoginCatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/directorUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -757,23 +705,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/catalog/LoginCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
+        <state relative-caret-position="391">
+          <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#createLayout#0;class#loginUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/positions/Elev.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createElev#0;class#Elev#0" />
+            <element signature="method#readElev#0;class#Elev#0" />
+            <element signature="method#updateElev#0;class#Elev#0" />
+            <element signature="method#deleteElev#0;class#Elev#0" />
           </folding>
         </state>
       </provider>
@@ -789,21 +760,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="55" column="8" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createLayout#0;class#loginUI#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#806#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/elevUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        <state relative-caret-position="220">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1526#1527#0" expanded="true" />
             <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1779#1809#0" expanded="true" />
-            <element signature="e#1814#1903#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2656#2657#0" expanded="true" />
-            <element signature="e#7797#7884#0" expanded="true" />
-            <element signature="e#9254#9255#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#549#579#0" expanded="true" />
+            <element signature="e#1880#1881#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
           </folding>
         </state>
       </provider>

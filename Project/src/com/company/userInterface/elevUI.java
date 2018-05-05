@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
+
+import static com.company.catalog.RapoarteCatalog.situatieElev;
 
 public class elevUI extends javax.swing.JFrame {
 
@@ -24,6 +27,18 @@ public class elevUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
+
+        jButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    situatieElev(22);
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -59,6 +74,8 @@ public class elevUI extends javax.swing.JFrame {
         jLabel5.setText("situatiaScolara");
         jLabel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jLabel5.setOpaque(true);
+        
+        setLocationRelativeTo(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

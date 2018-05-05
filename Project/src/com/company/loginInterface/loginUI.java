@@ -105,7 +105,8 @@ public class loginUI extends JFrame {
         loginPage.dispose();
         if(loginSuccess == 0) {
             //pagina de login apare pana se adauga un user si o parola corecta
-            new invalidLoginUI(tipEroare);
+            invalidLoginUI invalid = new invalidLoginUI(tipEroare);
+            invalid.setVisible(true);
         }
     }
 

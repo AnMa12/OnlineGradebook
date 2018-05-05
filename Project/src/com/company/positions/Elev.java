@@ -12,7 +12,7 @@ public class Elev {
             //STEP 4: Execute a query
             //System.out.println("Searching name from the table detaliiElev");
             stmt = conn.createStatement();
-            String sql = "SELECT nume, prenume FROM detaliiElev WHERE ID_ELEV =" + ID_ELEV;
+            String sql = "SELECT nume, prenume FROM elev WHERE ID_ELEV =" + ID_ELEV;
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 searchedName = searchedName + rs.getString("nume") + " " +

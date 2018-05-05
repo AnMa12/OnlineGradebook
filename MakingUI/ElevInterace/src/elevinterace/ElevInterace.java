@@ -16,7 +16,10 @@ public class ElevInterace {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Form form = new Form();
+        //Form form = new Form();
+        //form.setVisible(true);
+        
+        invalidLoginUI form = new invalidLoginUI();
         form.setVisible(true);
     }
     
