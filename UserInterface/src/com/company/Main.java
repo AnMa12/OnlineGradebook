@@ -20,18 +20,9 @@ class GridL {
     JFrame f;
     GridL() {
         f = new JFrame();
-        JButton btn1 = new JButton("1");
-        JButton btn2 = new JButton("2");
-        JButton btn3 = new JButton("3");
-        JButton btn4 = new JButton("4");
-        JButton btn5 = new JButton("5");
-        JButton btn6 = new JButton("6");
-        f.add(btn1);
-        f.add(btn2);
-        f.add(btn3);
-        f.add(btn4);
-        f.add(btn5);
-        f.add(btn6);
+
+        JTextField invalidUsername = new JTextField();
+
         f.setLayout(new GridLayout(2, 3));
         // Setam dispose on close pentru a inchide aplicatia la inchiderea frame-ului
         // daca nu setam setDefaultCloseOperaton acesta va avea default HIDE_ON_CLOSE

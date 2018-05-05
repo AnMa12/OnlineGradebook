@@ -1,6 +1,5 @@
 package com.company;
 
-import javax.swing.AbstractAction;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -11,6 +10,7 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Arrays;
 
 import static javax.swing.LayoutStyle.ComponentPlacement.UNRELATED;
@@ -22,52 +22,39 @@ public class PasswordEx extends JFrame {
     private JTextField loginField;
     private JPasswordField passField;
 
-    public PasswordEx() {
-        initUI();
-    }
-
-    private void initUI() {
-
+    private PasswordEx() {
         JLabel lbl1 = new JLabel("Login");
         JLabel lbl2 = new JLabel("Password");
 
         loginField = new JTextField(15);
         passField = new JPasswordField(15);
-        JButton submitButton = new JButton("Login");
+        JButton loginButton = new JButton("Login");
 
-        submitButton.addActionListener(new SubmitAction());
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                loginAction();
+            }
+        });
 
-        createLayout(lbl1, loginField, lbl2, passField, submitButton);
-
+        createLayout(lbl1, loginField, lbl2, passField, loginButton);
         setTitle("Login");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    private class SubmitAction extends AbstractAction {
+    private void loginAction() {
+        String login = loginField.getText();
+        char[] passwd = passField.getPassword();
 
-        @Override
-        public void actionPerformed(ActionEvent e) {
-
-            doSubmitAction();
+        if (!login.isEmpty() && passwd.length != 0) {
+            EventQueue.invokeLater(() -> {
+                LabelEx ex = new LabelEx();
+                ex.setVisible(true);
+            });
         }
-
-        private void doSubmitAction() {
-
-            String login = loginField.getText();
-            char[] passwd = passField.getPassword();
-
-            if (!login.isEmpty() && passwd.length != 0) {
-                EventQueue.invokeLater(() -> {
-                    LabelEx ex = new LabelEx();
-                    ex.setVisible(true);
-                });
-            }
-
-            exLogin.setVisible(false);
-
-            Arrays.fill(passwd, '0');
-        }
+        exLogin.dispose();
+        Arrays.fill(passwd, '0');
     }
 
     private void createLayout(Component... arg) {

@@ -10,16 +10,16 @@ public class Elev {
     public static String getElevNameByID(int ID_ELEV) throws SQLException {
         String searchedName = "";
             //STEP 4: Execute a query
-            //System.out.println("Searching name from the table elev");
+            //System.out.println("Searching name from the table detaliiElev");
             stmt = conn.createStatement();
-            String sql = "SELECT nume, prenume FROM elev WHERE ID_ELEV =" + ID_ELEV;
+            String sql = "SELECT nume, prenume FROM detaliiElev WHERE ID_ELEV =" + ID_ELEV;
             ResultSet rs = stmt.executeQuery(sql);
             while(rs.next()) {
                 searchedName = searchedName + rs.getString("nume") + " " +
                         rs.getString("prenume");
             }
             rs.close();
-            //System.out.println("Found name from the table elev");
+            //System.out.println("Found name from the table detaliiElev");
 
             if(!searchedName.equals(""))
             return searchedName;
@@ -29,20 +29,20 @@ public class Elev {
     public static void createElev(int ID_ELEV, String nume,
                                String prenume, String nume_clasa) throws SQLException {
             //STEP 4: Execute a query
-            System.out.println("Inserting record into table elev");
+            System.out.println("Inserting record into table detaliiElev");
             stmt = conn.createStatement();
-            String sql = "INSERT INTO elev " +
+            String sql = "INSERT INTO detaliiElev " +
                     "VALUES (" + ID_ELEV + ", '" + nume + "', '" + prenume + "', '" + nume_clasa + "')";
             stmt.executeUpdate(sql);
-            System.out.println("Inserted record into table elev");
+            System.out.println("Inserted record into table detaliiElev");
     }
 
     public static void readElev() throws SQLException {
             //STEP 4: Execute a query
-            System.out.println("Reading record from table elev");
+            System.out.println("Reading record from table detaliiElev");
             stmt = conn.createStatement();
 
-            String sql = "SELECT ID_ELEV, nume, prenume, nume_clasa FROM elev";
+            String sql = "SELECT ID_ELEV, nume, prenume, nume_clasa FROM detaliiElev";
             ResultSet rs = stmt.executeQuery(sql);
             //STEP 5: Extract data from result set
             while(rs.next()){
@@ -58,26 +58,26 @@ public class Elev {
                 System.out.println(", Last: " + last);
             }
             rs.close();
-            System.out.println("Done Reading record from table elev");
+            System.out.println("Done Reading record from table detaliiElev");
     }
 
     public static void updateElev(int ID_ELEV, String numeNou) throws SQLException {
             //STEP 4: Execute a query
-            System.out.println("Updating record from table elev");
+            System.out.println("Updating record from table detaliiElev");
             stmt = conn.createStatement();
-            String sql = "UPDATE elev " +
+            String sql = "UPDATE detaliiElev " +
                     "SET nume = '" + numeNou + "' WHERE ID_ELEV = " + ID_ELEV;
             stmt.executeUpdate(sql);
-            System.out.println("Updated record from table elev");
+            System.out.println("Updated record from table detaliiElev");
     }
 
     public static void deleteElev(int ID_ELEV) throws SQLException {
             //STEP 4: Execute a query
-            System.out.println("Deleting record from table elev");
+            System.out.println("Deleting record from table detaliiElev");
             stmt = conn.createStatement();
-            String sql = "DELETE FROM elev " +
+            String sql = "DELETE FROM detaliiElev " +
                     "WHERE ID_ELEV = " + ID_ELEV;
             stmt.executeUpdate(sql);
-            System.out.println("Deleted record from table elev");
+            System.out.println("Deleted record from table detaliiElev");
     }
 }

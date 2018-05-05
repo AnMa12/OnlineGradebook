@@ -1,4 +1,4 @@
-package com.company.elev;
+package com.company.detaliiElev;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -2,8 +2,8 @@ package com.company.catalog;
 
 import java.sql.SQLException;
 
-import static com.company.elev.Absente.getNrAbsenteElevByID;
-import static com.company.elev.Note.getNoteMedieElevByID;
+import static com.company.detaliiElev.Absente.getNrAbsenteElevByID;
+import static com.company.detaliiElev.Note.getNoteMedieElevByID;
 import static com.company.positions.Elev.getElevNameByID;
 
 public class RapoarteCatalog {
