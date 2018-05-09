@@ -26,6 +26,7 @@ public class Elev {
         return "nonexistentId";
     }
 
+    /* -- metodele pe care le foloseste directorul -- */
     public static void createElev(int ID_ELEV, String nume,
                                String prenume, String nume_clasa) throws SQLException {
             //STEP 4: Execute a query
@@ -80,4 +81,5 @@ public class Elev {
             stmt.executeUpdate(sql);
             System.out.println("Deleted record from table detaliiElev");
     }
+    /* -- --------------------------------------- -- */
 }

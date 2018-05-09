@@ -1,4 +1,4 @@
-package com.company.catalog;
+package com.company.cerinte;
 
 import com.company.loginInterface.loginUI;
 
