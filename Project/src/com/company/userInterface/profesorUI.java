@@ -5,9 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class profesorUI extends JFrame {
+public class ProfesorUI extends JFrame {
 
-    public profesorUI() {
+    public ProfesorUI() {
 
         JButton tryAgainButton = new JButton("profesor! close");
 

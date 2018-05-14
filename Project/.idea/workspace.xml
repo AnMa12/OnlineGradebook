@@ -12,11 +12,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Elev.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Elev.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/positions/Elev.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+            <state relative-caret-position="618">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createElev#0;class#Elev#0" />
@@ -28,11 +28,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="elevUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/elevUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoteElevUI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="111" column="67" lean-forward="true" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FunctionalitatiCatalog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/com/company/cerinte/LoginCatalog.java" />
         <option value="$PROJECT_DIR$/src/com/company/positions/Elev.java" />
         <option value="$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java" />
+        <option value="$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java" />
       </list>
     </option>
   </component>
@@ -94,7 +113,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,8 +186,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,30 +278,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32965517" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.30027547" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.29931036" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.15429688" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15429688" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32965517" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -298,7 +317,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/profesorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -335,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/directorUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/profesorUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -371,9 +389,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/directorUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/elevUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/profesorUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -453,8 +471,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/FunctionalitatiCatalog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="136">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -462,16 +480,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/profesorUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/directorUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/detaliiElev/Note.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/detaliiElev/Absente.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/elevUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/positions/Elev.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        <state relative-caret-position="618">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createElev#0;class#Elev#0" />
@@ -479,6 +496,20 @@
             <element signature="method#updateElev#0;class#Elev#0" />
             <element signature="method#deleteElev#0;class#Elev#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/elevUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="111" column="67" lean-forward="true" selection-start-line="111" selection-start-column="67" selection-end-line="111" selection-end-column="67" />
         </state>
       </provider>
     </entry>

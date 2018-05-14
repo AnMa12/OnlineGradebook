@@ -5,9 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class directorUI extends JFrame {
+public class DirectorUI extends JFrame {
 
-    public directorUI() {
+    public DirectorUI() {
 
         JButton tryAgainButton = new JButton("director! close");
 

@@ -50,7 +50,7 @@ public class NoteElevUI extends JFrame {
             public void run() {
                 try {
                      noteElevUI = new NoteElevUI();
-                    noteElevUI.frame.setVisible(true);
+                     //noteElevUI.frame.setVisible(true); - !!! trebuie stearsa
                 }catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -104,7 +104,7 @@ public class NoteElevUI extends JFrame {
     private void initialize() {
 
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setBounds(100, 100, 500, 450);
         JScrollPane scrollPane = new JScrollPane(table);
         frame.add(scrollPane, BorderLayout.CENTER);

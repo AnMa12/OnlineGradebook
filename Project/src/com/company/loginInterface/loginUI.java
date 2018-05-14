@@ -1,11 +1,9 @@
 package com.company.loginInterface;
 
-import  com.company.userInterface.elevUI;
-import com.company.userInterface.directorUI;
+import com.company.userInterface.DirectorUI;
 
-import com.company.userInterface.profesorUI;
+import com.company.userInterface.ProfesorUI;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -24,7 +22,6 @@ import javax.swing.JButton;
 
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
-import static javax.swing.LayoutStyle.ComponentPlacement.UNRELATED;
 
 public class loginUI extends JFrame {
 
@@ -181,12 +178,12 @@ public class loginUI extends JFrame {
                         break;
                     }
                     case "profesor": {
-                        profesorUI profesorUI = new profesorUI();
-                        profesorUI.setVisible(true);
+                        ProfesorUI ProfesorUI = new ProfesorUI();
+                        ProfesorUI.setVisible(true);
                         break;
                     }
                     case "director": {
-                        directorUI directorUI = new directorUI();
+                        DirectorUI directorUI = new DirectorUI();
                         directorUI.setVisible(true);
                         break;
                     }
