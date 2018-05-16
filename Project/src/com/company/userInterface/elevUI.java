@@ -3,7 +3,9 @@ package com.company.userInterface;
 import com.company.loginInterface.loginUI;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
+import static com.company.userInterface.AbsenteElevUI.callAbsenteUI;
 import static com.company.userInterface.NoteElevUI.callNoteUI;
+import static com.company.userInterface.ProfesorElevUI.callProfesorElevUI;
 
 
 import java.awt.EventQueue;
@@ -29,16 +31,12 @@ public class elevUI extends JFrame{
 
     private JFrame frame;
     private static elevUI elevUI;
-    /**
-     * Launch the application.
-     */
+
     public static void main(String[] args) {
         //callElevUI();
     }
 
-    /**
-     * Create the application.
-     */
+
     public elevUI(int id) throws SQLException {
         initialize(id);
     }
@@ -125,11 +123,9 @@ public class elevUI extends JFrame{
             //situatie elev
             @Override
             public void mouseClicked(MouseEvent arg0) {
-                callNoteUI();
+                callNoteUI(id);
             }
-            @Override
-            public void mouseEntered(MouseEvent e) {
-            }
+
         });
         lblNewLabel_1.setBounds(72, 29, 57, 59);
         panel_1.add(lblNewLabel_1);
@@ -140,6 +136,7 @@ public class elevUI extends JFrame{
             //profesoriElev
             @Override
             public void mouseClicked(MouseEvent e) {
+                callProfesorElevUI(id);
             }
         });
         lblNewLabel_2.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_1images.jpg"));
@@ -151,6 +148,7 @@ public class elevUI extends JFrame{
             //Absente elev
             @Override
             public void mouseClicked(MouseEvent e) {
+                callAbsenteUI(id);
             }
         });
         lblNewLabel_3.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_images_1.jpg"));

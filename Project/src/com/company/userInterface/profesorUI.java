@@ -11,7 +11,7 @@ public class ProfesorUI extends JFrame {
 
         JButton tryAgainButton = new JButton("profesor! close");
 
-        createLayout(tryAgainButton);
+        //createLayout(tryAgainButton);
 
         setVisible(true);
         setTitle("ProfesorPage");
@@ -26,7 +26,7 @@ public class ProfesorUI extends JFrame {
         });
     }
 
-    private void createLayout(JComponent... arg) {
+   /* private void createLayout(JComponent... arg) {
 
         Container pane = getContentPane();
         GroupLayout gl = new GroupLayout(pane);
@@ -46,5 +46,5 @@ public class ProfesorUI extends JFrame {
         gl.linkSize(arg[0]);
 
         pack();
-    }
+    }*/
 }

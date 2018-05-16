@@ -26,6 +26,25 @@ public class Elev {
         return "nonexistentId";
     }
 
+    public static String getClassElevByID(int ID_ELEV) throws SQLException{
+        String className = "";
+        //STEP 4: Execute a query
+        //System.out.println("Searching name from the table detaliiElev");
+        stmt = conn.createStatement();
+        String sql = "SELECT nume_clasa FROM elev WHERE ID_ELEV =" + ID_ELEV;
+        ResultSet rs = stmt.executeQuery(sql);
+        while(rs.next()) {
+            className =  rs.getString("nume_clasa");
+        }
+        rs.close();
+        //System.out.println("Found name from the table detaliiElev");
+
+        if(!className.equals(""))
+            return className;
+        return "nonexistentId";
+
+    }
+
     public static void createElev(int ID_ELEV, String nume,
                                String prenume, String nume_clasa) throws SQLException {
             //STEP 4: Execute a query

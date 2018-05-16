@@ -1,5 +1,6 @@
 package com.company.userInterface;
 
+import com.company.detaliiElev.Absente;
 import com.company.loginInterface.loginUI;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.createConnection;
@@ -25,11 +26,11 @@ import javax.swing.table.DefaultTableModel;
 
 
 
-public class NoteElevUI extends JFrame {
+public class AbsenteElevUI extends JFrame {
 
     private JFrame frame;
     private JTable table;
-    private static NoteElevUI noteElevUI;
+    private static AbsenteElevUI absenteElevUI;
     private  DefaultTableModel model;
 
 
@@ -37,7 +38,7 @@ public class NoteElevUI extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    NoteElevUI window = new NoteElevUI(1);
+                    AbsenteElevUI window = new AbsenteElevUI(1);
                     window.frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -45,12 +46,12 @@ public class NoteElevUI extends JFrame {
             }
         });
     }
-    public static  void callNoteUI(int id) {
+    public static  void callAbsenteUI(int id) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                     noteElevUI = new NoteElevUI(id);
-                     //noteElevUI.frame.setVisible(true); - !!! trebuie stearsa
+                    absenteElevUI = new AbsenteElevUI(id);
+                    //noteElevUI.frame.setVisible(true); - !!! trebuie stearsa
                 }catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -59,33 +60,33 @@ public class NoteElevUI extends JFrame {
 
     }
 
-    public NoteElevUI(int id) throws SQLException, NullPointerException, Exception {
+    public AbsenteElevUI(int id) throws SQLException, NullPointerException, Exception {
         initialize();
         try {
             //createConnection();
             model = new DefaultTableModel();
             table.setModel(model);
 
-            model.addColumn("NOTA");
             model.addColumn("DATA");
+            model.addColumn("STARE");
             model.addColumn("MATERIE");
             model.addColumn("PROFESOR");
 
 
 
             stmt = conn.createStatement();
-            String sql = "select n.nota,n.data_notei,m.denumire, p.nume, p.prenume\n" +
+            String sql = "select n.data_absentei, n.motivat,m.denumire, p.nume, p.prenume\n" +
                     "from materiiprof mp join materie m on (mp.id_materie = m.id_materie)\n" +
                     "                    join profesor p on (mp.id_profesor = p.id_profesor)\n" +
-                    "                    join note n on (n.id_mp = mp.id_mp)\n" +
+                    "                    join absente n on (n.id_mp = mp.id_mp)\n" +
                     "where n.id_elev = " +id;
             ResultSet rs = stmt.executeQuery(sql);
 
 
             while (rs.next()) {
                 model.addRow(new Object[]{
-                        rs.getInt("n.nota"),
-                        rs.getString("n.data_notei"),
+                        rs.getString("data_absentei"),
+                        rs.getString("n.motivat"),
                         rs.getString("m.denumire"),
                         rs.getString("p.nume") + " " +
                                 rs.getString("p.prenume")
