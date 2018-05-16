@@ -178,8 +178,9 @@ public class loginUI extends JFrame {
                         break;
                     }
                     case "profesor": {
-                        ProfesorUI ProfesorUI = new ProfesorUI();
-                        ProfesorUI.setVisible(true);
+                        //ProfesorUI ProfesorUI = new ProfesorUI();
+                        //ProfesorUI.setVisible(true);
+                        com.company.userInterface.ProfesorUI.callProfesorUI(id);
                         break;
                     }
                     case "director": {
