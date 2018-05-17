@@ -22,6 +22,7 @@ import javax.swing.JButton;
 
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
+import static com.company.userInterface.DirectorUI.callDirectorUI;
 
 public class loginUI extends JFrame {
 
@@ -184,8 +185,7 @@ public class loginUI extends JFrame {
                         break;
                     }
                     case "director": {
-                        DirectorUI directorUI = new DirectorUI();
-                        directorUI.setVisible(true);
+                        callDirectorUI(id);
                         break;
                     }
                 }

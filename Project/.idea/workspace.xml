@@ -25,9 +25,100 @@
       <file leaf-file-name="AdaugaAbsenteUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AdaugaAbsenteUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="94" column="55" lean-forward="true" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
+            <state relative-caret-position="-136">
+              <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectorUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="582">
+              <caret line="148" column="41" lean-forward="false" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+              <folding>
+                <element signature="e#4834#5120#0" expanded="true" />
+                <element signature="e#5119#5120#0" expanded="true" />
+                <element signature="e#5307#5954#0" expanded="true" />
+                <element signature="e#5953#5954#0" expanded="true" />
+                <element signature="e#6151#6747#0" expanded="true" />
+                <element signature="e#6746#6747#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AfisareEleviUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AfisareEleviUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Materie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/positions/Materie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="735">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfesorElevUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorElevUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoteElevUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="119" column="5" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="119" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbsenteElevUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AbsenteElevUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-527">
+              <caret line="62" column="84" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfesorUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loginUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="187" column="43" lean-forward="false" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/com/company/elev/Absente.java" />
         <option value="$PROJECT_DIR$/src/com/company/elev/Note.java" />
         <option value="$PROJECT_DIR$/src/com/company/personnel/Materie.java" />
-        <option value="$PROJECT_DIR$/src/com/company/positions/Materie.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/loginUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/invalidLoginUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
@@ -74,26 +164,28 @@
         <option value="$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/directorUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/profesorUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/positions/Elev.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/ProfesorElevUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/AbsenteElev.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/AbsenteElevUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/elevUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/positions/Profesor.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/AdaugareNoteUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/userInterface/AdaugaAbsenteUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/positions/Materie.java" />
+        <option value="$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/userInterface/AfisareEleviUI.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-24" />
-    <option name="y" value="63" />
-    <option name="width" value="1148" />
-    <option name="height" value="698" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -210,7 +302,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CatalogOnline/jcalendar-1.4.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CatalogOnline" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -248,14 +340,14 @@
       <module name="Project" />
       <envs />
     </configuration>
-    <configuration name="DataBaseLogin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" runner="idea">
+    <configuration name="DirectorUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.company.database.*" />
+          <option name="PATTERN" value="com.company.userInterface.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.company.database.DataBaseLogin" />
+      <option name="MAIN_CLASS_NAME" value="com.company.userInterface.DirectorUI" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -338,18 +430,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.DataBaseLogin" />
-      <item index="2" class="java.lang.String" itemvalue="Application.elevUI" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ProfesorElevUI" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AdaugareNoteUI" />
+      <item index="1" class="java.lang.String" itemvalue="Application.elevUI" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ProfesorElevUI" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AdaugareNoteUI" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DirectorUI" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AdaugareNoteUI" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ProfesorElevUI" />
-        <item index="3" class="java.lang.String" itemvalue="Application.elevUI" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DataBaseLogin" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DirectorUI" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AdaugareNoteUI" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ProfesorElevUI" />
+        <item index="4" class="java.lang.String" itemvalue="Application.elevUI" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +462,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -381,7 +473,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29793978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29793978" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -439,7 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/invalidLoginUI.java" />
@@ -534,38 +625,10 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/detaliiElev/Note.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/detaliiElev/Absente.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/catalog/RapoarteCatalog.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/positions/Materie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/positions/Elev.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorElevUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AbsenteElevUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="62" column="84" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -583,31 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/positions/Profesor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="114" column="40" lean-forward="false" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="106" column="8" lean-forward="false" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -641,10 +683,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/loginInterface/loginUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="187" column="43" lean-forward="false" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AbsenteElevUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="62" column="84" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/positions/Materie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/ProfesorElevUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/NoteElevUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="119" column="5" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="119" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/DirectorUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="148" column="41" lean-forward="false" selection-start-line="148" selection-start-column="41" selection-end-line="148" selection-end-column="41" />
+          <folding>
+            <element signature="e#4834#5120#0" expanded="true" />
+            <element signature="e#5119#5120#0" expanded="true" />
+            <element signature="e#5307#5954#0" expanded="true" />
+            <element signature="e#5953#5954#0" expanded="true" />
+            <element signature="e#6151#6747#0" expanded="true" />
+            <element signature="e#6746#6747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AfisareEleviUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="56" column="44" lean-forward="false" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/userInterface/AdaugaAbsenteUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="94" column="55" lean-forward="true" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
+        <state relative-caret-position="-136">
+          <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
           <folding />
         </state>
       </provider>

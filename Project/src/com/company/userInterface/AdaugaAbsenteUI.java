@@ -114,7 +114,7 @@ public class AdaugaAbsenteUI extends JFrame{
                 SimpleDateFormat sdf = new SimpleDateFormat("DD-MM-YYYY");
                 String data = sdf.format(dateChooser.getDate());
 
-                String query = "INSERT INTO note VALUES(?,?,?,?)";
+                String query = "INSERT into  note VALUES(?,?,?,?);";
                 PreparedStatement pst = null;
                 try {
                     pst = conn.prepareStatement(query);
