@@ -6,6 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.SQLException;
+
+import static com.company.positions.Profesor.getProfesorNameByID;
+import static com.company.userInterface.AdaugaAbsenteUI.callAdaugaAbsenteUI;
+import static com.company.userInterface.AdaugareNoteUI.callAdaugareNoteUI;
 
 public class ProfesorUI extends JFrame {
 
@@ -40,14 +45,14 @@ public class ProfesorUI extends JFrame {
         });
 
     }
-    public ProfesorUI(int id) {
-        initialize();
+    public ProfesorUI(int id) throws SQLException {
+        initialize(id);
     }
 
     /**
      * Initialize the contents of the frame.
      */
-    private void initialize() {
+    private void initialize(int id) throws SQLException{
         frame = new JFrame();
         frame.setBounds(100, 100, 450, 326);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -75,7 +80,8 @@ public class ProfesorUI extends JFrame {
         numeProfesor.setForeground(new Color(0, 0, 0));
         numeProfesor.setBounds(0, 0, 224, 61);
         panel_1.add(numeProfesor);
-        numeProfesor.setText("Alexe Bogdan");
+
+        numeProfesor.setText(getProfesorNameByID(id));
 
         JPanel panel_2 = new JPanel();
         panel_2.setBackground(new Color(224, 255, 255));
@@ -87,6 +93,7 @@ public class ProfesorUI extends JFrame {
         btnNewButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent arg0) {
+                callAdaugareNoteUI(id);
             }
         });
 
@@ -105,6 +112,7 @@ public class ProfesorUI extends JFrame {
         btnNewButton_1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent arg0) {
+                callAdaugaAbsenteUI(id);
             }
         });
 
