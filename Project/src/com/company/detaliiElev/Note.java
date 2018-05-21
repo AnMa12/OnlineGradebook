@@ -9,6 +9,35 @@ import static com.company.positions.Materie.getMaterieProfesorNameByID;
 
 public class Note {
 
+    public static double getMedieElevByID(int ID_ELEV) throws SQLException {
+        //metoda returneaza media + notele
+        //cautam in tabela de note doar notele care au la ID_ELEV elevul dorit, si facem media cu ele
+        stmt = conn.createStatement();
+        String sql = "SELECT nota, ID_ELEV FROM note";
+        ResultSet rs = stmt.executeQuery(sql);
+        //in acelasi timp calculam si media
+        int numarNote = 0;
+        int sumaNote = 0;
+
+        while(rs.next()){
+            //Retrieve by column name
+            int nota  = rs.getInt("nota");
+            int idElev = rs.getInt("ID_ELEV");
+
+            if(idElev == ID_ELEV) {
+                numarNote ++;
+                sumaNote += nota;
+            }
+        }
+        rs.close();
+
+        double medie = 0;
+        if(numarNote != 0) {
+            medie = sumaNote/numarNote;
+        }
+        return medie;
+    }
+
     public static double getNoteMedieElevByID(int ID_ELEV) throws SQLException {
         //metoda returneaza media + notele
         //cautam in tabela de note doar notele care au la ID_ELEV elevul dorit, si facem media cu ele

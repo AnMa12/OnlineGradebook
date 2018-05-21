@@ -1,8 +1,14 @@
 package com.company.userInterface;
 
 import com.company.loginInterface.loginUI;
+
+import static com.company.catalog.RapoarteCatalog.getClasaByIdElev;
+import static com.company.catalog.RapoarteCatalog.medieClasa;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
+import static com.company.detaliiElev.Note.getMedieElevByID;
+import static com.company.detaliiElev.Note.getNoteMedieElevByID;
+import static com.company.positions.Elev.updateElev;
 import static com.company.userInterface.AbsenteElevUI.callAbsenteUI;
 import static com.company.userInterface.NoteElevUI.callNoteUI;
 import static com.company.userInterface.ProfesorElevUI.callProfesorElevUI;
@@ -10,17 +16,12 @@ import static com.company.userInterface.ProfesorElevUI.callProfesorElevUI;
 
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.border.CompoundBorder;
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
 import java.awt.Font;
-import javax.swing.JTextField;
 import java.awt.SystemColor;
-import javax.swing.JToggleButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.ResultSet;
@@ -82,6 +83,42 @@ public class elevUI extends JFrame{
         panel.setBounds(0, 0, 223, 361);
         frame.getContentPane().add(panel);
         panel.setLayout(null);
+
+        JButton btnNewButtonMedie = new JButton("Media clasei");
+        JLabel labelMedie = new JLabel("Media clasei: ??");
+        labelMedie.setBounds(5, 8, 207, 118);
+        panel.add(labelMedie);
+        btnNewButtonMedie.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                try {
+                    labelMedie.setText("Media clasei: " + medieClasa(getClasaByIdElev(id)));
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+        btnNewButtonMedie.setBounds(5, 5, 104, 23);
+        panel.add(btnNewButtonMedie);
+
+
+
+        JButton btnNewButtonMedieElev = new JButton("Media mea");
+        JLabel labelMedieElev = new JLabel("Media mea: ??");
+        labelMedieElev.setBounds(110, 8, 207, 118);
+        panel.add(labelMedieElev);
+        btnNewButtonMedieElev.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                try {
+                    labelMedieElev.setText("Media mea: " + String.valueOf(getMedieElevByID(id)));
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
+        btnNewButtonMedieElev.setBounds(110, 5, 104, 23);
+        panel.add(btnNewButtonMedieElev);
 
         JLabel lblNewLabel = new JLabel("New label");
         lblNewLabel.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\35785-200.png"));

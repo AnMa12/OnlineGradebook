@@ -9,7 +9,5 @@ public class FunctionalitatiCatalog {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         createConnection();
         login();
-
-        //!!!System.out.println(medieClasa("12A"));
     }
 }

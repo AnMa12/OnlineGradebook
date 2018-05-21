@@ -279,6 +279,3 @@ public class DirectorUI extends JFrame {
             panel_1.add(btnNewButtonUpdate);
         }
     }
-
-
-
