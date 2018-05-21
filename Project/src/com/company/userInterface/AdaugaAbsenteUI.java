@@ -12,6 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.jar.JarFile;
 
+import static com.company.detaliiElev.Absente.adaugareAbsenta;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.positions.Profesor.getID_MP;
 import static com.company.positions.Profesor.getMateriiByID;
@@ -119,7 +120,18 @@ public class AdaugaAbsenteUI extends JFrame{
                 SimpleDateFormat sdf = new SimpleDateFormat("DD-MM-YYYY");
                 String data = sdf.format(dateChooser.getDate());
 
-                
+                int idMaterieProf = 0;
+                try {
+                    idMaterieProf = getID_MP(id,materie);
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+
+                try {
+                    adaugareAbsenta(id, idMaterieProf, data, "nemotivat");
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
             }
         });
         btnAdauga.setBounds(209, 128, 77, 23);
