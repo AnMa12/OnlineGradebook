@@ -11,6 +11,21 @@ import static com.company.positions.Elev.getElevNameByID;
 
 public class RapoarteCatalog {
 
+    public static String getClasaByIdElev(int idElev) throws SQLException {
+        stmt = conn.createStatement();
+        String sql = "SELECT nume_clasa\n" +
+                "        FROM elev\n" +
+                "        WHERE ID_ELEV = " + idElev + ";";
+        ResultSet rs = stmt.executeQuery(sql);
+        String numeClasa = "";
+        while(rs.next()) {
+            numeClasa = numeClasa + rs.getString("nume_clasa");
+        }
+
+        rs.close();
+        return numeClasa;
+    }
+
     public static double medieClasa (String numeClasa) throws SQLException {
         //trebuie luate toate notele elevilor dintr-o clasa
         //STEP 4: Execute a query
