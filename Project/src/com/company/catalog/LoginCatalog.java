@@ -1,11 +1,5 @@
 package com.company.catalog;
-
-import com.company.loginInterface.loginUI;
-
-import java.awt.*;
 import java.sql.SQLException;
-
-import static com.company.detaliiElev.Absente.adaugareAbsenta;
 import static com.company.loginInterface.loginUI.callLoginUI;
 
 public class LoginCatalog {
