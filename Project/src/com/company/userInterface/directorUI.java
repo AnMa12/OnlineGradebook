@@ -130,22 +130,55 @@ public class DirectorUI extends JFrame {
             textField_3.setColumns(10);
             textField_3.setVisible(false);
 
-            JButton btnTrimite = new JButton("Trimite");
-            btnTrimite.setBounds(60, 272, 89, 23);
-            panel_1.add(btnTrimite);
-            btnTrimite.setVisible(false);
+            JButton btnDelete = new JButton("Sterge");
+            btnDelete.setBounds(60, 272, 89, 23);
+
+            JButton btnCreate = new JButton("Adauga");
+            btnCreate.setBounds(60, 272, 89, 23);
+
+            JButton btnUpdate = new JButton("Update");
+            btnUpdate.setBounds(60, 272, 89, 23);
+
+            panel_1.add(btnDelete);
+            panel_1.add(btnCreate);
+            panel_1.add(btnUpdate);
+
+            btnDelete.setVisible(false);
+            btnCreate.setVisible(false);
+            btnUpdate.setVisible(false);
+
+            JButton btnElevi = new JButton("Lista Elevi");
+            btnElevi.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    //READ
+                    callAfisareEleviUI();
+                    lblIntroduId.setVisible(false);
+                    textField.setVisible(false);
+                    textField_3.setVisible(false);
+                    lblIntroduClasa.setVisible(false);
+                    textField_2.setVisible(false);
+                    lblIntroduPrenume.setVisible(false);
+                    textField_1.setVisible(false);
+                    lblIntroduNume.setVisible(false);
+                }
+            });
+            btnElevi.setBounds(64, 11, 104, 23);
+            panel_1.add(btnElevi);
 
             JButton btnNewButton = new JButton("Sterge elev");
             btnNewButton.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent arg0) {
                     //OPTIUNEA DE STERGERE ELEV
+                    btnCreate.setVisible(false);
+                    btnUpdate.setVisible(false);
                     lblIntroduId.setVisible(true);
                     textField.setVisible(true);
-                    btnTrimite.setVisible(true);
-                    btnTrimite.setText("Sterge");
+                    btnDelete.setVisible(true);
+                    btnDelete.setText("Sterge");
                     //CAND APASAM BUTONUL STERGEM ELEVEUL
-                    btnTrimite.addMouseListener(new MouseAdapter() {
+                    btnDelete.addMouseListener(new MouseAdapter() {
                         @Override
                         public void mouseClicked(MouseEvent arg0) {
                         //LUAM ID-UL PE CARE IL VREM SI STERGEM ELEVUL
@@ -163,31 +196,13 @@ public class DirectorUI extends JFrame {
             btnNewButton.setBounds(64, 45, 104, 23);
             panel_1.add(btnNewButton);
 
-            JButton btnElevi = new JButton("Lista Elevi");
-            btnElevi.addMouseListener(new MouseAdapter() {
-                @Override
-                public void mouseClicked(MouseEvent e) {
-                    //READ
-                    callAfisareEleviUI();
-                    lblIntroduId.setVisible(false);
-                    textField.setVisible(false);
-                    btnTrimite.setVisible(false);
-                    textField_3.setVisible(false);
-                    lblIntroduClasa.setVisible(false);
-                    textField_2.setVisible(false);
-                    lblIntroduPrenume.setVisible(false);
-                    textField_1.setVisible(false);
-                    lblIntroduNume.setVisible(false);
-                }
-            });
-            btnElevi.setBounds(64, 11, 104, 23);
-            panel_1.add(btnElevi);
-
             JButton btnNewButton_1 = new JButton("Adauga elev");
             btnNewButton_1.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     //CREATE
+                    btnDelete.setVisible(false);
+                    btnUpdate.setVisible(false);
                     lblIntroduId.setVisible(true);
                     textField.setVisible(true);
                     textField_3.setVisible(true);
@@ -197,10 +212,10 @@ public class DirectorUI extends JFrame {
                     textField_1.setVisible(true);
                     lblIntroduNume.setVisible(true);
 
-                    btnTrimite.setVisible(true);
-                    btnTrimite.setText("Adauga");
+                    btnCreate.setVisible(true);
+                    btnCreate.setText("Adauga");
                     //CAND APASAM BUTONUL ADAUGAM ELEVUL
-                    btnTrimite.addMouseListener(new MouseAdapter() {
+                    btnCreate.addMouseListener(new MouseAdapter() {
                         @Override
                         public void mouseClicked(MouseEvent arg0) {
                             //LUAM ID-UL PE CARE IL VREM SI STERGEM ELEVUL
@@ -223,11 +238,13 @@ public class DirectorUI extends JFrame {
             btnNewButton_1.setBounds(64, 79, 104, 23);
             panel_1.add(btnNewButton_1);
 
-            JButton btnNewButton_0 = new JButton("Update elev");
-            btnNewButton_0.addMouseListener(new MouseAdapter() {
+            JButton btnNewButtonUpdate = new JButton("Update elev");
+            btnNewButtonUpdate.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
                     //UPDATE
+                    btnDelete.setVisible(false);
+                    btnCreate.setVisible(false);
                     lblIntroduId.setVisible(true);
                     textField.setVisible(true);
                     textField_1.setVisible(true);
@@ -238,10 +255,10 @@ public class DirectorUI extends JFrame {
                     textField_2.setVisible(false);
                     lblIntroduPrenume.setVisible(false);
 
-                    btnTrimite.setVisible(true);
-                    btnTrimite.setText("Update");
+                    btnUpdate.setVisible(true);
+                    btnUpdate.setText("Update");
                     //CAND APASAM BUTONUL UPDATAM ELEVUL
-                    btnTrimite.addMouseListener(new MouseAdapter() {
+                    btnUpdate.addMouseListener(new MouseAdapter() {
                         @Override
                         public void mouseClicked(MouseEvent arg0) {
                             //LUAM ID-UL PE CARE IL VREM SI UPDATAM NUMELE
@@ -249,18 +266,17 @@ public class DirectorUI extends JFrame {
                             String numeElev = textField_1.getText();
 
                             try {
-                                //CREATE
+                                //UPDATE
                                 updateElev(Integer.parseInt(id_elev),numeElev);
                             } catch (SQLException e) {
                                 e.printStackTrace();
                             }
-
                         }
                     });
                 }
             });
-            btnNewButton_0.setBounds(64, 113, 104, 23);
-            panel_1.add(btnNewButton_0);
+            btnNewButtonUpdate.setBounds(64, 113, 104, 23);
+            panel_1.add(btnNewButtonUpdate);
         }
     }
 
