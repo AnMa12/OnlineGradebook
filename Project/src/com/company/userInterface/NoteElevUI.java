@@ -71,8 +71,6 @@ public class NoteElevUI extends JFrame {
             model.addColumn("MATERIE");
             model.addColumn("PROFESOR");
 
-
-
             stmt = conn.createStatement();
             String sql = "select n.nota,n.data_notei,m.denumire, p.nume, p.prenume\n" +
                     "from materiiprof mp join materie m on (mp.id_materie = m.id_materie)\n" +

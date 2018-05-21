@@ -24,9 +24,6 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 
-
-
-
 public class ProfesorElevUI extends JFrame {
 
     private JFrame frame;
@@ -72,9 +69,6 @@ public class ProfesorElevUI extends JFrame {
             model.addColumn("PRENUME");
             model.addColumn("MATERIE");
 
-
-
-
             stmt = conn.createStatement();
             String sql = "select  p.nume, p.prenume, m.denumire\n" +
                     "from materiiprof mp join materie m on (mp.id_materie = m.id_materie)\n" +
@@ -97,9 +91,7 @@ public class ProfesorElevUI extends JFrame {
         }catch (Exception e) {
             e.printStackTrace();
         }
-
     }
-
 
     private void initialize() {
 

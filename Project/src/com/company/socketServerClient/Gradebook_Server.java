@@ -1,4 +1,4 @@
-package com.company.ServerClientSocket;
+package com.company.socketServerClient;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -11,10 +11,12 @@ public class Gradebook_Server {
     public static void main(String[] sir) throws IOException {
         ServerSocket ss = null; Socket cs = null;
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Portul : ");
         ss = new ServerSocket(sc.nextInt());
         sc.nextLine();
         System.out.println("Serverul a pornit !");
+
         cs = ss.accept();
         DataInputStream dis; DataOutputStream dos;
         dis = new DataInputStream(cs.getInputStream());

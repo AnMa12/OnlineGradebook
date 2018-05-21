@@ -148,7 +148,6 @@ public class AdaugareNoteUI extends JFrame{
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-
             }
         });
         btnAdauga.setBounds(209, 161, 77, 23);

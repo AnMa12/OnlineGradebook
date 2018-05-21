@@ -7,8 +7,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
+import static com.company.detaliiElev.Note.adaugareNota;
+import static com.company.positions.Elev.createElev;
+import static com.company.positions.Elev.deleteElev;
+import static com.company.positions.Elev.updateElev;
+import static com.company.positions.Profesor.getID_MP;
 import static com.company.positions.Profesor.getMateriiByID;
 import static com.company.positions.Profesor.getProfesorNameByID;
 import static com.company.userInterface.AfisareEleviUI.callAfisareEleviUI;
@@ -133,18 +139,35 @@ public class DirectorUI extends JFrame {
             btnNewButton.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent arg0) {
+                    //OPTIUNEA DE STERGERE ELEV
                     lblIntroduId.setVisible(true);
                     textField.setVisible(true);
                     btnTrimite.setVisible(true);
+                    btnTrimite.setText("Sterge");
+                    //CAND APASAM BUTONUL STERGEM ELEVEUL
+                    btnTrimite.addMouseListener(new MouseAdapter() {
+                        @Override
+                        public void mouseClicked(MouseEvent arg0) {
+                        //LUAM ID-UL PE CARE IL VREM SI STERGEM ELEVUL
+                            String id_elev = textField.getText();
+                            try {
+                                //DELETE
+                                deleteElev(Integer.parseInt(id_elev));
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    });
                 }
             });
             btnNewButton.setBounds(64, 45, 104, 23);
             panel_1.add(btnNewButton);
 
-            JButton btnElevi = new JButton("Elevi");
+            JButton btnElevi = new JButton("Lista Elevi");
             btnElevi.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
+                    //READ
                     callAfisareEleviUI();
                     lblIntroduId.setVisible(false);
                     textField.setVisible(false);
@@ -164,23 +187,80 @@ public class DirectorUI extends JFrame {
             btnNewButton_1.addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
+                    //CREATE
                     lblIntroduId.setVisible(true);
                     textField.setVisible(true);
-                    btnTrimite.setVisible(true);
                     textField_3.setVisible(true);
                     lblIntroduClasa.setVisible(true);
                     textField_2.setVisible(true);
                     lblIntroduPrenume.setVisible(true);
                     textField_1.setVisible(true);
                     lblIntroduNume.setVisible(true);
+
+                    btnTrimite.setVisible(true);
+                    btnTrimite.setText("Adauga");
+                    //CAND APASAM BUTONUL ADAUGAM ELEVUL
+                    btnTrimite.addMouseListener(new MouseAdapter() {
+                        @Override
+                        public void mouseClicked(MouseEvent arg0) {
+                            //LUAM ID-UL PE CARE IL VREM SI STERGEM ELEVUL
+                            String id_elev = textField.getText();
+                            String clasaElev= textField_3.getText();
+                            String prenumeElev = textField_2.getText();
+                            String numeElev = textField_1.getText();
+
+                            try {
+                                //CREATE
+                                createElev(Integer.parseInt(id_elev),numeElev,prenumeElev,clasaElev);
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+                    });
                 }
             });
             btnNewButton_1.setBounds(64, 79, 104, 23);
             panel_1.add(btnNewButton_1);
 
+            JButton btnNewButton_0 = new JButton("Update elev");
+            btnNewButton_0.addMouseListener(new MouseAdapter() {
+                @Override
+                public void mouseClicked(MouseEvent e) {
+                    //UPDATE
+                    lblIntroduId.setVisible(true);
+                    textField.setVisible(true);
+                    textField_1.setVisible(true);
+                    lblIntroduNume.setVisible(true);
 
+                    textField_3.setVisible(false);
+                    lblIntroduClasa.setVisible(false);
+                    textField_2.setVisible(false);
+                    lblIntroduPrenume.setVisible(false);
 
+                    btnTrimite.setVisible(true);
+                    btnTrimite.setText("Update");
+                    //CAND APASAM BUTONUL UPDATAM ELEVUL
+                    btnTrimite.addMouseListener(new MouseAdapter() {
+                        @Override
+                        public void mouseClicked(MouseEvent arg0) {
+                            //LUAM ID-UL PE CARE IL VREM SI UPDATAM NUMELE
+                            String id_elev = textField.getText();
+                            String numeElev = textField_1.getText();
 
+                            try {
+                                //CREATE
+                                updateElev(Integer.parseInt(id_elev),numeElev);
+                            } catch (SQLException e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+                    });
+                }
+            });
+            btnNewButton_0.setBounds(64, 113, 104, 23);
+            panel_1.add(btnNewButton_0);
         }
     }
 
