@@ -34,7 +34,6 @@ public class DirectorUI extends JFrame {
         });
     }
 
-
     public static void callDirectorUI(int id) {
         EventQueue.invokeLater(new Runnable() {
             public void run() {

@@ -15,6 +15,7 @@ import java.util.jar.JarFile;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.positions.Profesor.getID_MP;
 import static com.company.positions.Profesor.getMateriiByID;
+import static com.company.userInterface.AfisareEleviUI.callAfisareEleviUI;
 
 public class AdaugaAbsenteUI extends JFrame{
 
@@ -76,12 +77,16 @@ public class AdaugaAbsenteUI extends JFrame{
         lblIdElev.setBounds(30, 48, 46, 14);
         panel.add(lblIdElev);
 
+        //BUTON CARE SA ARATE ELEVII
+        //PENTRU A PUTEA SA STIM CUI VREM SA PUNEM NOTA
         JButton btnElevi = new JButton("Elevi");
         btnElevi.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent arg0) {
+            public void mouseClicked(MouseEvent e) {
+                callAfisareEleviUI();
             }
         });
+
         btnElevi.setBounds(209, 44, 77, 23);
         panel.add(btnElevi);
 
@@ -114,41 +119,7 @@ public class AdaugaAbsenteUI extends JFrame{
                 SimpleDateFormat sdf = new SimpleDateFormat("DD-MM-YYYY");
                 String data = sdf.format(dateChooser.getDate());
 
-                String query = "INSERT into  note VALUES(?,?,?,?);";
-                PreparedStatement pst = null;
-                try {
-                    pst = conn.prepareStatement(query);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.setString(2,"nemotivat");
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.setString(1,data);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.setInt(3,Integer.parseInt(id_elev));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.setInt(4,getID_MP(id,materie));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.executeUpdate();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(id_elev);
-                System.out.println(materie);
-                System.out.println(data);
+                
             }
         });
         btnAdauga.setBounds(209, 128, 77, 23);

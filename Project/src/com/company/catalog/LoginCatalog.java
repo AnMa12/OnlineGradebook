@@ -5,6 +5,7 @@ import com.company.loginInterface.loginUI;
 import java.awt.*;
 import java.sql.SQLException;
 
+import static com.company.detaliiElev.Absente.adaugareAbsenta;
 import static com.company.loginInterface.loginUI.callLoginUI;
 
 public class LoginCatalog {
@@ -28,7 +29,7 @@ public class LoginCatalog {
         //deleteElev(22);
     }
 
-    private static void loginProfesor() {
+    private static void loginProfesor() throws SQLException {
         /* TASK 3: gestiunea notelor si absentelor – profesorii pot face operatii de tip CRUD
            pe notele si absentele unui detaliiElev. O nota are identificatorul elevului,
            denumirea materiei, nota si data. O absenta are numele studentului,

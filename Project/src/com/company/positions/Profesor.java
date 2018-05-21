@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import static com.company.database.DataBaseLogin.conn;
 import static com.company.database.DataBaseLogin.stmt;
 import static com.company.database.DataBaseLogin.conn;
+import static com.company.positions.Materie.getMaterieProfesorNameByID;
 
 public class Profesor {
 
@@ -46,21 +47,27 @@ public class Profesor {
                 return mat;
 
     }
-    public static int  getID_MP(int ID_PROFESOR,String materie) throws SQLException{
+    public static int  getID_MP(int ID_PROFESOR, String materie) throws SQLException{
         stmt = conn.createStatement();
-        String sql = "select id_mp\n" +
-                "from materiiprof mp join materie m on (mp.id_materie = m.id_materie)\n" +
-                "where id_profesor = " + ID_PROFESOR +
-                " and m.denumire = ' " + materie +"'; ";
+        String sql = "SELECT mp.id_mp\n" +
+                     "FROM materiiprof mp\n" +
+                     "JOIN materie m ON mp.id_materie = m.id_materie\n" +
+                     "JOIN profesor p ON mp.id_profesor = p.id_profesor\n" +
+                     "WHERE p.id_profesor = "+ ID_PROFESOR + " AND\n" +
+                     "      m.denumire = '" + materie + "';";
+
+
         ResultSet rs = stmt.executeQuery(sql);
+        int id_mp = 0;
 
-            int  id_mp = rs.getInt("id_mp");
-
-
+        while(rs.next()){
+            //Retrieve by column name
+            id_mp = rs.getInt("id_mp");
+        }
+        rs.close();
 
         rs.close();
         return id_mp;
-
     }
 
 }

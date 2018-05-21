@@ -19,15 +19,17 @@ import com.toedter.calendar.JDateChooser;
 
 import javax.swing.JComboBox;
 
+import static com.company.detaliiElev.Absente.adaugareAbsenta;
+import static com.company.detaliiElev.Note.adaugareNota;
 import static com.company.positions.Profesor.getID_MP;
 import static com.company.positions.Profesor.getMateriiByID;
 import static com.company.database.DataBaseLogin.conn;
+import static com.company.userInterface.AfisareEleviUI.callAfisareEleviUI;
 
 public class AdaugareNoteUI extends JFrame{
 
     private static AdaugareNoteUI adaugareNoteUI;
     private static JFrame frame;
-
 
     /**
      * Launch the application.
@@ -63,7 +65,6 @@ public class AdaugareNoteUI extends JFrame{
             initialize(id);
 
     }
-
 
     private void initialize(int id) throws SQLException{
 
@@ -117,7 +118,6 @@ public class AdaugareNoteUI extends JFrame{
             comboBox.addItem(plm);
         }
 
-
         comboBox.setSelectedItem(null);
         panel.add(comboBox);
 
@@ -135,54 +135,36 @@ public class AdaugareNoteUI extends JFrame{
                 SimpleDateFormat sdf = new SimpleDateFormat("DD-MM-YYYY");
                 String data = sdf.format(dateChooser.getDate());
 
-                String query = "INSERT INTO note VALUES(?,?,?,?)";
-                PreparedStatement pst = null;
+                int idMaterieProf = 0;
                 try {
-                    pst = conn.prepareStatement(query);
+                    idMaterieProf = getID_MP(id,materie);
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
+
+                //APELARE METODA ADAUGARE NOTA
                 try {
-                    pst.setInt(1,Integer.parseInt(nota));
+                    adaugareNota(Integer.parseInt(id_elev), idMaterieProf, Integer.parseInt(nota), data);
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }
-                try {
-                    pst.setString(2,data);
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.setInt(3,Integer.parseInt(id_elev));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.setInt(4,getID_MP(id,materie));
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                try {
-                    pst.executeUpdate();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(id_elev);
-                System.out.println(nota);
-                System.out.println(materie);
-                System.out.println(data);
+
             }
         });
         btnAdauga.setBounds(209, 161, 77, 23);
         panel.add(btnAdauga);
         frame.setVisible(true);
+
+        //BUTON CARE SA ARATE ELEVII
+        //PENTRU A PUTEA SA STIM CUI VREM SA PUNEM NOTA
         JButton btnElevi = new JButton("Elevi");
         btnElevi.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseClicked(MouseEvent arg0)  {
-
+            public void mouseClicked(MouseEvent e) {
+                callAfisareEleviUI();
             }
         });
+
         btnElevi.setBounds(30, 11, 89, 23);
         panel.add(btnElevi);
     }
