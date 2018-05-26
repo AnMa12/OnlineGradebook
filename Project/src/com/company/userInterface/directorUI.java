@@ -76,7 +76,7 @@ public class DirectorUI extends JFrame {
 
             JLabel label = new JLabel("");
             label.setBounds(0, 11, 220, 256);
-            label.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_neutral-s005-512.png"));
+            label.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\rsz_neutral-s005-512.png"));
             panel.add(label);
 
             JPanel panel_1 = new JPanel();

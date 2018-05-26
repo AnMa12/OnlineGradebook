@@ -1,36 +1,23 @@
 package com.company.socketServerClient;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.Socket;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Gradebook_Client {
-    public static void main(String[] sir) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Adresa serverului si portul :");
-        String adresa = sc.next(); int port = sc.nextInt();
-        sc.nextLine();
-        Socket cs = null;
-        try { cs = new Socket(adresa,port); }
-        catch(Exception e) {
-            System.out.println("Conexiune esuata");
-            System.exit(1);
-        }
-        DataInputStream dis; DataOutputStream dos;
-        dis = new DataInputStream(cs.getInputStream());
-        dos = new DataOutputStream(cs.getOutputStream());
-        String linie;
-        for( ; ; ) {
-            System.out.print("Mesaj de trimis : \t");
-            linie = sc.nextLine(); dos.writeUTF(linie);
-            linie = linie.trim();
-            if( linie.equals("STOP") ) break;
-            linie = dis.readUTF();
-            System.out.println("Mesaj receptionat :\t" + linie);
-        }
-        System.out.println("GATA");
-        cs.close(); dis.close(); dos.close();
+
+    public static void main(String[] args) throws IOException {
+        String serverAddress = JOptionPane.showInputDialog(
+                "Enter IP Address of a machine that is\n" +
+                        "running the date service on port 9090:");
+        Socket s = new Socket(serverAddress, 9090);
+        BufferedReader input =
+                new BufferedReader(new InputStreamReader(s.getInputStream()));
+        String answer = input.readLine();
+        JOptionPane.showMessageDialog(null, answer);
+        System.exit(0);
     }
 }

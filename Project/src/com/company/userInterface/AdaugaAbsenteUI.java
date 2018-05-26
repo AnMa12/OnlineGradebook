@@ -115,7 +115,6 @@ public class AdaugaAbsenteUI extends JFrame{
             @Override
             public void mouseClicked(MouseEvent arg0) {
                 String id_elev = textField.getText();
-
                 String materie = String.valueOf(comboBox.getSelectedItem());
                 SimpleDateFormat sdf = new SimpleDateFormat("DD-MM-YYYY");
                 String data = sdf.format(dateChooser.getDate());
@@ -128,7 +127,7 @@ public class AdaugaAbsenteUI extends JFrame{
                 }
 
                 try {
-                    adaugareAbsenta(id, idMaterieProf, data, "nemotivat");
+                    adaugareAbsenta(Integer.parseInt(id_elev), idMaterieProf, data, "nemotivat");
                 } catch (SQLException e) {
                     e.printStackTrace();
                 }

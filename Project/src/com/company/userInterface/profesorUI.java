@@ -70,7 +70,7 @@ public class ProfesorUI extends JFrame {
         panel_1.setLayout(null);
 
         JLabel label = new JLabel("");
-        label.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\download.png"));
+        label.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\download.png"));
         label.setBounds(10, 62, 204, 225);
         panel_1.add(label);
 
@@ -98,7 +98,7 @@ public class ProfesorUI extends JFrame {
         });
 
         btnNewButton.setBackground(new Color(100, 149, 237));
-        btnNewButton.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_note.png"));
+        btnNewButton.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\rsz_note.png"));
         btnNewButton.setBounds(76, 30, 74, 69);
         panel_2.add(btnNewButton);
 
@@ -116,7 +116,7 @@ public class ProfesorUI extends JFrame {
             }
         });
 
-        btnNewButton_1.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_bad-naughty-student-002-512.png"));
+        btnNewButton_1.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\rsz_bad-naughty-student-002-512.png"));
         btnNewButton_1.setBounds(76, 146, 74, 69);
         panel_2.add(btnNewButton_1);
 

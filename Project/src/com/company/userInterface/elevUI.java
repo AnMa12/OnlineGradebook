@@ -121,7 +121,7 @@ public class elevUI extends JFrame{
         panel.add(btnNewButtonMedieElev);
 
         JLabel lblNewLabel = new JLabel("New label");
-        lblNewLabel.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\35785-200.png"));
+        lblNewLabel.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\35785-200.png"));
         lblNewLabel.setBounds(10, 79, 207, 118);
         panel.add(lblNewLabel);
 
@@ -166,7 +166,7 @@ public class elevUI extends JFrame{
         });
         lblNewLabel_1.setBounds(72, 29, 57, 59);
         panel_1.add(lblNewLabel_1);
-        lblNewLabel_1.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_images.jpg"));
+        lblNewLabel_1.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\rsz_images.jpg"));
 
         JLabel lblNewLabel_2 = new JLabel("New label");
         lblNewLabel_2.addMouseListener(new MouseAdapter() {
@@ -176,7 +176,7 @@ public class elevUI extends JFrame{
                 callProfesorElevUI(id);
             }
         });
-        lblNewLabel_2.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_1images.jpg"));
+        lblNewLabel_2.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\rsz_1images.jpg"));
         lblNewLabel_2.setBounds(72, 139, 57, 56);
         panel_1.add(lblNewLabel_2);
 
@@ -188,7 +188,7 @@ public class elevUI extends JFrame{
                 callAbsenteUI(id);
             }
         });
-        lblNewLabel_3.setIcon(new ImageIcon("E:\\facultate\\Sem2an2\\java\\rsz_images_1.jpg"));
+        lblNewLabel_3.setIcon(new ImageIcon("E:\\GitHub\\OnlineGradebook\\Project\\rsz_images_1.jpg"));
         lblNewLabel_3.setBounds(72, 246, 57, 58);
         panel_1.add(lblNewLabel_3);
 
